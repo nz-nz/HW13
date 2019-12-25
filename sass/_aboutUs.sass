@@ -1,0 +1,52 @@
+.aboutUs
+  @include sidePadding($topP, $rightP, $bottomP, $leftP)
+  .aboutUsMain
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  .aboutUsMainInfo
+    width: 50%
+  .aboutUsMainPlate
+    width: 50%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  .aboutUsMainPlateItem
+    width: 180px
+    height: 180px
+    background-color: #EBEBEB
+    margin: 1em 0
+    &:hover
+      background-color: #005FA3
+      .aboutUsMainPlateItemNum, .aboutUsMainPlateItemText, .aboutUsMainPlateItemLnk a
+        color: white
+  .aboutUsInfo
+    @include h2
+  .aboutUsMainInfo
+    width: 350px
+  .aboutUsMainInfoCompany
+    @include title
+  .aboutUsMainInfoName
+    @extend .aboutUsMainInfoCompany
+    color: #005FA3
+  .aboutUsMainInfoText
+    @include ordinaryText
+    padding: 20px 0 0 0
+  .aboutUsMainPlateItem
+    padding: 10px
+  .aboutUsMainPlateItemNum
+    @include title
+    font-size: 40px
+  .aboutUsMainPlateItemText
+    font-family: Lato, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 18px
+  .aboutUsMainPlateItemLnk
+    font-family: Lato, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    padding: 20px 0 0 0

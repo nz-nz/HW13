@@ -1,0 +1,47 @@
+.header
+  @include sidePadding($HeaderTopP, $HeaderRightP, $HeaderBottomP, $HeaderLeftP)
+  background-color: $backgroundColorHeader
+  display: flex
+  flex-direction: row
+  align-items: center
+  #headerLogo
+    width: 30%
+    display: flex
+    flex-direction: row
+    align-items: center
+  #headerMain
+    width: 70%
+    > div
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: .5em 0
+    > div > div
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+  #headerLogoText
+    padding-left: .5em
+    font-family: Merriweather, serif
+    font-style: normal
+    font-weight: 900
+    font-size: 36px
+    line-height: 50px
+    color: #005FA3
+  .headerMainInfoText
+    padding-left: .5em
+    font-family: Lato, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 13px
+    line-height: 17px
+  #headerMainMenu
+    font-family: Lato, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #222222

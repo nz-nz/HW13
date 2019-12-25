@@ -1,0 +1,50 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+$backgroundColorHeader: transparent
+$backgroundColorHeaderPic: transparent
+$backgroundColorServices: #EBEBEB
+$backgroundColorAboutUs: transparent
+$backgroundColorFeedback: transparent
+$backgroundColorClients: #EBEBEB
+$backgroundColorContacts: transparent
+$backgroundColorFooter: transparent
+
+$HeaderTopP: 1%
+$HeaderRightP: 17%
+$HeaderBottomP: 1%
+$HeaderLeftP: 17%
+
+$topP: 5%
+$rightP: 17%
+$bottomP: 5%
+$leftP: 17%
+
+@mixin sidePadding($topP, $rightP, $bottomP, $leftP)
+  padding: $topP $rightP $bottomP $leftP
+
+@mixin h2
+  font-family: Lato, sans-serif
+  font-style: normal
+  font-weight: 900
+  font-size: 24px
+  line-height: 33px
+  color: #BDBDBD
+
+@mixin title
+  font-family: Merriweather, serif
+  font-style: normal
+  font-weight: 900
+  font-size: 48px
+  line-height: 69px
+  color: #333333
+
+@mixin ordinaryText
+  font-family: Lato, sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 18px
+  line-height: 25px
+  color: #000000

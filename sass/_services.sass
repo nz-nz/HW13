@@ -1,0 +1,28 @@
+.services
+  @include sidePadding($topP, $rightP, $bottomP, $leftP)
+  background-color: $backgroundColorServices
+  #servicesTextInfo
+    @include h2
+  #servicesTextMain
+    @include title
+  #servicesPlate
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+  .servicesPlateItem
+    width:  230px
+    height: 230px
+    background-image: url("../img/plateServices.png")
+    background-position: center
+    background-size: cover
+    margin: 1em 0
+    font-family: Lato, sans-serif
+    font-style: normal
+    font-weight: 900
+    font-size: 24px
+    line-height: 30px
+    color: #FFFFFF
+    padding: 150px 0 0 20px
+    &:hover
+      background-image: url("../img/plateServicesActive.png")
